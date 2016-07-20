@@ -1,2 +1,27 @@
-*{margin: 0; padding: 0;}
-body{background: url("../res/images/dotted.png")}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("../res/images/dotted.png")
+}
+
+/*文字居中*/
+.text-align-center {
+    text-align: center;
+    padding: auto;
+}
+
+/* 背景色 识别不同 模块*/
+.bg1 {
+    background-color: aquamarine;
+}
+
+.bg2 {
+    background-color: coral;
+}
+
+.bg3 {
+    background-color: violet;
+}
