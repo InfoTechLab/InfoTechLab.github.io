@@ -133,11 +133,35 @@ ul {
     height: 50px;
 }
 
+.drop-menu li:hover
+{
+    background-color:#60deed 
+}
 .drop-menu a {
     display: block;
     line-height: 50px;
 }
 
+.drop-menu a:link
+{
+    color: black;
+}
+.drop-menu a:hover
+{
+    color: #fff;
+}
+.drop-menu a:visited
+{
+    color: black;
+}
+.drop-menu .active
+{
+    background-color: #60deed;
+}
+.drop-menu .active a
+{
+    color: #fff !important;
+}
 
 /*底部*/
 
