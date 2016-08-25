@@ -55,7 +55,7 @@ $(function () {
         if (!open) {
             $(this).find(".iconfont").css("color", "#53a1ab");
             $(".drop-menu").animate({
-                height: "150px"
+                height: "200px"
             });
             open = true;
         } else {
