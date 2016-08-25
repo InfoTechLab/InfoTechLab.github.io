@@ -1,29 +1,120 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
+
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>主页-信息技术实验室</title>
-    <link href="style/comm.css" type="text/css" rel="stylesheet"/>
-    <link href="style/index.css" type="text/css" rel="stylesheet">
+   <link rel="stylesheet" href="public/style/master.min.css">
+    <link rel="shortcut icon" href="public/images/ico.ico">
 </head>
 
 <body>
-<div class="head bg1 text-align-center">
-    <h2>信息技术实验室</h2>
-</div>
-<div class="content bg2 text-align-center">
-    <!-- <p> 内容</p>-->
-    <div>
-        <img src="res/images/dada.gif" style="margin: 20px">
+    <!--头部-->
+    <div class="header-wrap">
+        <div class="header-image">
+            <img src="public/images/17566659.jpg" alt="图标">
+            <p>信息技术实验室</p>
+        </div>
+        <div class="header-menu">
+            <ul>
+                <li class="active"><a href="index.html">首页</a></li>
+                <li><a href="#">优秀作品</a></li>
+                <li><a href="public/about.html">关于我们</a></li>
+                <li><a href="#">加入我们</a></li>
+            </ul>
+            <div class="division"></div>
+        </div>
+        <div class="drop-menu-button">
+            <i class="iconfont">&#xe603;</i>
+        </div>
     </div>
-</div>
-<div class="foot bg3 text-align-center">
-    <div>
-        <p>
-            <br>
-            信息技术实验室 <span style="font-family:Arial;">&copy;</span>
-        </p>
+    <div class="drop-menu">
+        <ul>
+            <li class="active"><a href="index.html">首页</a></li>
+            <li><a href="#">优秀作品</a></li>
+            <li><a href="public/about.html">关于我们</a></li>
+            <li><a href="#">加入我们</a></li>
+        </ul>
     </div>
-</div>
+    <!--轮播图-->
+    <div class="flexslider" style="width100%;height:600px;margin:40px auto 0 auto;position:relative;overflow:hidden;">
+        <ul class="slides">
+            <li style="height:600px">
+                <img src="public/images/banner.jpg" height="100%" alt="">
+                <div style="position: absolute; top:70px; left:45px;; width:70%; height:400px;">
+                    <div class="slide_content_left">
+                        <h2>舒适的学习环境</h2></div>
+                </div>
+            </li>
+            <li style="height:600px">
+                <img src="public/images/banner1.jpg" height="100%" alt="">
+                <div class="slide_content_right">
+                    <h2>先进的实验室设备</h2></div>
+            </li>
+        </ul>
+    </div>
+    <!-- 主体部分-->
+    <div class="wrap-main">
+        <div class="main-1">
+            <div class="head">
+                <h1><i class="iconfont characteristic">&#xe602;</i>我们的特色</h1>
+            </div>
+            <div class="content">
+                <div class="left">
+                    <i class="iconfont h5">&#xe600;<p class="info">html(5)</p></i>
+                </div>
+                <div class="center">
+                    <i class="iconfont java">&#xe601;<p class="info">java web</p></i>
+                </div>
+                <div class="right">
+                    <h2>走在技术最前沿</h2>
+                    <p class="text">本实验室主要研究网站的建立、运维。涉及的技术有html(5)、java web、数据库。几乎都是近几年兴起的技术，各大公司都缺少优秀的技术人员。因此，实验室也分为两个部门：前端部门和后端部门。主张最新的前后端分离的思想。</p>
+                </div>
+            </div>
+        </div>
+        <div class="main-2">
+            <div class="head">
+                <h1><i class="iconfont characteristic">&#xe602;</i>你将会收获</h1>
+            </div>
+            <div class="content">
+                <div class="left">
+                    <h2>优秀的学(lao)长(si)学(ji)姐(men)带你飞</h2>
+                    <p>让你在大学少走弯路，更快地找到学习的方向，走向人生巅峰！</p>
+                </div>
+                <div class="center">
+                    <h2>获得难得的实践机会</h2>
+                    <p>企业缺少的是有项目经验的人，在这里，将有真实的项目给你练手，让你在找工作时比别人更胜一筹</p>
+                </div>
+                <div class="right"></div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-wrap">
+        <div class="footer-left">
+            <h4>友情链接：</h4>
+            <ul>
+                <li><a href="http://www.ayit.edu.cn">安阳工学院官网</a></li>
+                <li><a href="http://jwgl.ayit.edu.cn">安阳工学院教务处</a></li>
+            </ul>
+        </div>
+        <div class="footer-center">
+        </div>
+        <div class="footer-right">
+            &copy;安阳工学院信息技术实验室
+        </div>
+    </div>
+    <div class="wrap-go-top">
+        <div class="go-top-gray"></div>
+        <div class="go-top"></div>
+    </div>
+    <script src="public/plug/jquery.min.js"></script>
+    <script src="public/plug/jquery.flexslider.min.js"></script>
+    <script src="public/javascript/master.min.js"></script>
+    <script>
+        $(".flexslider").flexslider();
+    </script>
 </body>
+
 </html>
