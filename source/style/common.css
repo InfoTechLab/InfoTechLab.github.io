@@ -168,8 +168,9 @@ ul {
 .footer-wrap {
     margin-top: 10px;
     padding-top: 10px;
-    background-color: #cec8c8;
+    background-color: #22132d;
     overflow: hidden;
+    color: #fff;
 }
 
 .footer-wrap .footer-left,
@@ -181,15 +182,21 @@ ul {
     text-align: center;
 }
 
-.footer-wrap .footer-left a:link,
-.footer-wrap .footer-left a:visited {
-    color: blue;
+.btn
+{
+    display: block;
+    width: 150px;
+    margin: 20px auto;
+    padding: 5px 0;
+    border-radius: 10px;
+    background-color: #60deed;
+    color: #fff;
 }
 
-.footer-wrap .footer-left a:hover {
-    color: #60deed;
+.btn:hover
+{
+    background-color: aqua;
 }
-
 .footer-wrap .footer-center {
     height: 200px;
     background-image: url(../images/dashu.png);
