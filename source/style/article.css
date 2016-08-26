@@ -1,7 +1,7 @@
-.about-image
+.image
 {
-    width: 1150px;
-    margin: 20px auto;
+    text-align: center;
+    margin: 20px 0;
 }
 .text-wrap h2
 {
