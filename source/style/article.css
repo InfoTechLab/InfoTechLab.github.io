@@ -1,20 +1,25 @@
-.image
-{
+.image {
     text-align: center;
     margin: 20px 0;
 }
-.text-wrap h2
-{
+
+.text-wrap h2 {
     width: 220px;
     padding: 10px 20px;
 }
-.text-wrap
-{
-    width: 1150px;
+
+.text-wrap {
+    width: 100%;
     margin: auto;
 }
-.text-wrap .text
-{
+
+.text-wrap .text {
     text-indent: 40px;
     line-height: 50px
+}
+
+@media screen and (max-width:992px) {
+    .image img {
+        width: 100%;
+    }
 }

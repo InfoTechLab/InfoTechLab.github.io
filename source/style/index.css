@@ -549,7 +549,7 @@ html[xmlns] .slides {
     background-color: #ec82b8;
     background-image: url(../images/a4817176_s.png);
     background-repeat: no-repeat;
-    background-position: 110% 700%;
+    background-position: 115% 700%;
 }
 
 .wrap-main .main-1 .left,
@@ -564,7 +564,23 @@ html[xmlns] .slides {
     width: 33.333%;
     text-align: center;
 }
-
+.wrap-main .main-1 .left,
+.wrap-main .main-1 .center,
+.wrap-main .main-1 .right{
+    position: relative;
+}
+.wrap-main .main-1 .left
+{
+    left: -106%;
+}
+.wrap-main .main-1 .right
+{
+    left: 100%;
+}
+.wrap-main .main-1 .center
+{
+    display: none;
+}
 .main-1 .right h2 {
     color: #fff;
 }

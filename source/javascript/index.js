@@ -35,12 +35,12 @@ $(function () {
     /*导航特效*/
     $(a).each(function (i) {
         if ($(this).parent().hasClass("active")) {
-            num=i;
+            num = i; //记住有active类的下标，当鼠标移出时用到
             $division.css({
                 marginLeft: (100 / a.length) * i + "%"
             });
         }
-           
+
         $(this).on("mouseover", function () {
             $division.stop().animate({
                 marginLeft: (100 / a.length) * i + "%"
@@ -64,6 +64,17 @@ $(function () {
                 height: 0
             });
             open = false;
+        }
+    });
+    var main1Top = $(".main-1 .content").offset().top;
+    var nowPosition;
+    $(document).on("scroll", function () {
+        nowPosition = $(window).height() + $(document).scrollTop();
+        if (nowPosition >= main1Top) {
+            $(".main-1 .left,.main-1 .right").animate({
+                left: 0
+            },1500);
+            $(".main-1 .center").fadeIn("slow");
         }
     });
 });
