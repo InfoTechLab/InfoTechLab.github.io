@@ -55,7 +55,7 @@ $(function () {
         if (!open) {
             $(this).find(".iconfont").css("color", "#53a1ab");
             $(".drop-menu").animate({
-                height: "250px"
+                height: "300px"
             });
             open = true;
         } else {
@@ -66,21 +66,29 @@ $(function () {
             open = false;
         }
     });
-    var main1Left = $(".main-1 .left").offset().top,
-        main1Center = $(".main-1 .center").offset().top,
-        main1Right = $(".main-1 .right").offset().top,
-        main2Left = $(".main-2 .left").offset().top,
-        main2Center = $(".main-2 .center").offset().top,
-        main2Right = $(".main-2 .right").offset().top,
-        nowPosition = $(window).height() + $(document).scrollTop();
-    show(".main-1", main1Left, main1Center, main1Right, nowPosition);
-    show(".main-2", main2Left, main2Center, main2Right, nowPosition);
-    $(document).on("scroll", function () {
-        nowPosition = $(window).height() + $(document).scrollTop();
-        show(".main-1", main1Left, main1Center, main1Right, nowPosition);
-        show(".main-2", main2Left, main2Center, main2Right, nowPosition);
-    });
+    slide();
 });
+    /*首页特效*/
+    function slide() {
+        if ($(".main-1").length && $(".main-2").length) {
+            var main1Left = $(".main-1 .left").offset().top,
+                main1Center = $(".main-1 .center").offset().top,
+                main1Right = $(".main-1 .right").offset().top,
+                main2Left = $(".main-2 .left").offset().top,
+                main2Center = $(".main-2 .center").offset().top,
+                main2Right = $(".main-2 .right").offset().top,
+                nowPosition = $(window).height() + $(document).scrollTop();
+            show(".main-1", main1Left, main1Center, main1Right, nowPosition);
+            show(".main-2", main2Left, main2Center, main2Right, nowPosition);
+            $(document).on("scroll", function () {
+                nowPosition = $(window).height() + $(document).scrollTop();
+                show(".main-1", main1Left, main1Center, main1Right, nowPosition);
+                show(".main-2", main2Left, main2Center, main2Right, nowPosition);
+            });
+        } else {
+            return;
+        }
+    }
 
 function show(main, Left, Center, Right, nowPosition) {
     if (nowPosition >= Left + 100) {

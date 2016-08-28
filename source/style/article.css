@@ -11,13 +11,23 @@
 .text-wrap {
     width: 100%;
     margin: auto;
+    padding: 0 50px;
+    box-sizing: border-box;
 }
 
 .text-wrap .text {
     text-indent: 40px;
-    line-height: 50px
+    line-height: 50px;
 }
-
+.text-wrap .text a:link,.text-wrap .text a:visited
+{
+    color: #60deed;
+    text-decoration: underline;
+}
+.text-wrap .text a:hover
+{
+    text-decoration: none;
+}
 @media screen and (max-width:992px) {
     .image img {
         width: 100%;
