@@ -549,7 +549,7 @@ html[xmlns] .slides {
     background-color: #ec82b8;
     background-image: url(../images/a4817176_s.png);
     background-repeat: no-repeat;
-    background-position: 115% 700%;
+    background-position: -15% 400%;
 }
 
 .wrap-main .main-1 .left,
@@ -564,30 +564,36 @@ html[xmlns] .slides {
     width: 33.333%;
     text-align: center;
 }
+
 .wrap-main .main-1 .left,
 .wrap-main .main-1 .center,
-.wrap-main .main-1 .right{
+.wrap-main .main-1 .right,
+.wrap-main .main-2 .left,
+.wrap-main .main-2 .center,
+.wrap-main .main-2 .right {
     position: relative;
 }
-.wrap-main .main-1 .left
-{
+
+.wrap-main .main-1 .left {
     left: -106%;
 }
-.wrap-main .main-1 .right
-{
+
+.wrap-main .main-1 .right {
     left: 100%;
 }
-.wrap-main .main-1 .center
-{
-    display: none;
+
+.wrap-main .main-1 .center {
+    opacity: 0;
 }
+
 .main-1 .right h2 {
     color: #fff;
 }
 
-.wrap-main .main-1 .left .h5 {
+.wrap-main .main-1 .h5 {
     color: #ff4e00;
     font-size: 300px;
+    opacity: 0.5;
 }
 
 .wrap-main .main-1 .center .java {
@@ -616,6 +622,23 @@ html[xmlns] .slides {
     margin-top: 20px;
 }
 
+.main-1 .content a {
+    display: block;
+    width: 100px;
+    padding: 5px 10px;
+    margin: 20px auto 0 auto;
+}
+
+.main-1 .content a:link,.main-1 .content a:visited {
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.main-1 .content a:hover {
+    color: #ec82b8;
+    background-color: #fff;
+}
+
 .main-1 .content .right {
     margin-top: 20px;
 }
@@ -633,13 +656,19 @@ html[xmlns] .slides {
     height: 400px;
     width: 33.333%;
     padding-top: 10%;
-    background-color: #60deed;
     box-sizing: border-box;
+}
+
+.main-2 .left {
+    background-color: #60deed;
+    left: -100%;
 }
 
 .main-2 .center {
     color: #60deed;
     background-color: #fff;
+    left: 10%;
+    opacity: 0;
 }
 
 .main-2 .right {
@@ -648,6 +677,7 @@ html[xmlns] .slides {
     background-repeat: no-repeat;
     background-position: 0% 100%;
     background-size: contain;
+    left: 100%;
 }
 
 .main-2 .left h2,
@@ -670,6 +700,7 @@ html[xmlns] .slides {
     }
     .wrap-main .main-1 .h5 {
         margin-left: -50px;
+        opacity: 1;
     }
     .wrap-main .main-1 .center .java {
         margin-left: 0px;
