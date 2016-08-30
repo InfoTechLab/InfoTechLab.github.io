@@ -102,9 +102,9 @@ ul {
     width: 50px;
 }
 
-.header-wrap .header-image p {
+.header-wrap .header-image h2 {
     float: right;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .division {
