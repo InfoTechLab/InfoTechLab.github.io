@@ -110,6 +110,7 @@ ul {
 .division {
     width: 16.667%;
     border: 1px solid #60deed;
+    float: left;
 }
 
 .drop-menu-button {

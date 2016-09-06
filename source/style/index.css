@@ -629,7 +629,8 @@ html[xmlns] .slides {
     margin: 20px auto 0 auto;
 }
 
-.main-1 .content a:link,.main-1 .content a:visited {
+.main-1 .content a:link,
+.main-1 .content a:visited {
     color: #fff;
     border: 1px solid #fff;
 }
@@ -683,6 +684,16 @@ html[xmlns] .slides {
 .main-2 .left h2,
 .main-2 .center h2 {
     margin-bottom: 20px;
+}
+
+@media screen and (min-width:1200px) {
+    .flexslider
+    {
+        height: 680px;
+    }
+    .flexslider>.slides,.flexslider>.slides>li{
+        height: 680px;
+    }
 }
 
 @media screen and (max-width:992px) {
