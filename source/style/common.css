@@ -28,8 +28,10 @@ html,
 p,
 div,
 ul,
+ol,
 li,
-img,
+dl,
+dd img,
 h1,
 h2,
 h3,
@@ -135,35 +137,35 @@ ul {
     height: 50px;
 }
 
-.drop-menu li:hover
-{
-    background-color:#60deed 
+.drop-menu li:hover {
+    background-color: #60deed
 }
+
 .drop-menu a {
     display: block;
     line-height: 50px;
 }
 
-.drop-menu a:link
-{
+.drop-menu a:link {
     color: black;
 }
-.drop-menu a:hover
-{
+
+.drop-menu a:hover {
     color: #fff;
 }
-.drop-menu a:visited
-{
+
+.drop-menu a:visited {
     color: black;
 }
-.drop-menu .active
-{
+
+.drop-menu .active {
     background-color: #60deed;
 }
-.drop-menu .active a
-{
+
+.drop-menu .active a {
     color: #fff !important;
 }
+
 
 /*底部*/
 
@@ -184,8 +186,7 @@ ul {
     text-align: center;
 }
 
-.btn
-{
+.btn {
     display: block;
     width: 150px;
     margin: 20px auto;
@@ -195,10 +196,10 @@ ul {
     color: #fff;
 }
 
-.btn:hover
-{
+.btn:hover {
     background-color: aqua;
 }
+
 .footer-wrap .footer-center {
     height: 200px;
     background-image: url(../images/dashu.png);
@@ -253,7 +254,8 @@ ul {
 }
 
 @media screen and (min-width:992px) {
-    .drop-menu-button,.drop-menu {
+    .drop-menu-button,
+    .drop-menu {
         display: none;
     }
 }

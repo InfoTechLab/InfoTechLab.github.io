@@ -1,0 +1,56 @@
+.main-wrap {
+    height: 550px;
+    font-size: 22px;
+}
+
+.menus {
+    width: 40%;
+    margin: 10px auto;
+    border: 1px solid #aaa;
+    padding: 40px;
+}
+
+.menus h1 {
+    font-size: 22px;
+    color: #60deed;
+    transition: all .3s ease-in;
+    border-radius: 5px;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+.menus dl
+{
+    height: 0;
+    overflow: hidden;
+}
+.menus dd
+{
+    transition: all .3s ease-in;
+    border-radius: 5px;
+}
+.menus a {
+    display: block;
+    transition: all .3s ease-in;
+}
+
+.menus h1:hover,
+.menus dd:hover {
+    background-color: #60deed;
+}
+
+.menus a:link,
+.menus a:visited {
+    color: #60deed;
+}
+
+.menus h1:hover a {
+    color: #fff;
+}
+@media screen and (max-width:992px)
+{
+    .menus
+    {
+        width: 80%;
+    }
+}
