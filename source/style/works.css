@@ -37,8 +37,12 @@
 .menus h1:hover,
 .menus dd:hover {
     background-color: #60deed;
-}
 
+}
+.menus dd:hover a
+{
+    color: #fff;    
+}
 .menus a:link,
 .menus a:visited {
     color: #60deed;
