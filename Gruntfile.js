@@ -60,7 +60,7 @@ module.exports = function (grunt) {
                 dest: 'public/',
             }
         },
-        clean: ["temp", "source/source", "node_modules"]
+        clean: ["temp", "public/source", "node_modules"]
     });
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-concat');
