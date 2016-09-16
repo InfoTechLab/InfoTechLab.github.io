@@ -16,6 +16,16 @@
     cursor: pointer;
 }
 
+@font-face {
+    font-family: 'minijianyingbik5d5dc2736165d8';
+    src: url('http://cdn.webfont.youziku.com/webfonts/nomal/91608/19493/57db509bf629d806c0aab3be.gif');
+    src: url('http://cdn.webfont.youziku.com/webfonts/nomal/91608/19493/57db509bf629d806c0aab3be.gif?#iefix') format('embedded-opentype'), url('http://cdn.webfont.youziku.com/webfonts/nomal/91608/19493/57db509bf629d806c0aab3be.bmp') format('woff'), url('http://cdn.webfont.youziku.com/webfonts/nomal/91608/19493/57db509bf629d806c0aab3be.jpg') format('truetype'), url('http://cdn.webfont.youziku.com/webfonts/nomal/91608/19493/57db509bf629d806c0aab3be.png#minijianyingbikaishu') format('svg');
+}
+
+.css5d5dc2736165d8 {
+    font-family: 'minijianyingbik5d5dc2736165d8';
+}
+
 body,
 html {
     width: 100%;
@@ -107,6 +117,7 @@ ul {
 .header-wrap .header-image h2 {
     float: right;
     margin-top: 10px;
+    font-size: 30px;
 }
 
 .division {

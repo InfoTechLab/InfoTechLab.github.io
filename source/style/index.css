@@ -593,7 +593,6 @@ html[xmlns] .slides {
 .wrap-main .main-1 .h5 {
     color: #ff4e00;
     font-size: 300px;
-    opacity: 0.5;
 }
 
 .wrap-main .main-1 .center .java {
@@ -661,12 +660,12 @@ html[xmlns] .slides {
 }
 
 .main-2 .left {
-    background-color: #60deed;
+    background-color: #F2385A;
     left: -100%;
 }
 
 .main-2 .center {
-    color: #60deed;
+    color: #F2385A;
     background-color: #fff;
     left: 10%;
     opacity: 0;
@@ -711,7 +710,6 @@ html[xmlns] .slides {
     }
     .wrap-main .main-1 .h5 {
         margin-left: -50px;
-        opacity: 1;
     }
     .wrap-main .main-1 .center .java {
         margin-left: 0px;
