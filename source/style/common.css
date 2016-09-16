@@ -116,6 +116,7 @@ ul {
 .header-wrap .header-image h2 {
     float: right;
     margin-top: 10px;
+    margin-left: 10px;
     font-size: 30px;
 }
 
