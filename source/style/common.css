@@ -267,6 +267,14 @@ ul {
     .header-wrap .header-image h2 {
         font-size: 25px;
     }
+    .drop-menu-button .iconfont
+    {
+        margin-right: 5px;
+    }
+    .drop-menu-button
+    {
+        margin-top: 5px;
+    }
 }
 
 @media screen and (min-width:992px) {
