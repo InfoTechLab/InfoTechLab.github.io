@@ -715,3 +715,10 @@ html[xmlns] .slides {
         margin-left: 0px;
     }
 }
+@media screen and (max-width:769px)
+{
+    .main-1 .content
+    {
+        width: 100%;
+    }
+}
