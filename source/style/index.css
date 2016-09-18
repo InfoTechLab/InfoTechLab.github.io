@@ -35,6 +35,8 @@
 .flexslider .slides > li {
     display: none;
     -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
 }
 
 
@@ -94,6 +96,7 @@ html[xmlns] .slides {
     max-height: 2000px;
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
     transition: all 1s ease;
 }
 
@@ -123,6 +126,8 @@ html[xmlns] .slides {
     text-indent: -9999px;
     opacity: 0.8;
     -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
 }
 
 .flex-direction-nav .flex-next {
@@ -293,12 +298,14 @@ html[xmlns] .slides {
     /* Firefox */
     -webkit-animation: reset, slide-left 0.8s;
     /* Safari and Chrome */
+     -o-animation: reset, slide-left 0.8s;
 }
 
 .flexslider ul.slides li .slide_content_right {
     animation: reset, slide-right 0.8s;
     -moz-animation: reset, slide-right 0.8s;
     -webkit-animation: reset, slide-right 0.8s;
+    -o-animation: reset, slide-right 0.8s;
 }
 
 .flexslider ul.slides li .slide_desc {
@@ -311,6 +318,7 @@ html[xmlns] .slides {
     left: 8%;
     -webkit-animation: reset, slide-down 0.8s;
     -moz-animation: reset, slide-down 0.8s;
+    -o-animation: reset, slide-down 0.8s;
     animation: reset, slide-down 0.8s;
 }
 
@@ -319,6 +327,7 @@ html[xmlns] .slides {
     right: 8%;
     -webkit-animation: reset, slide-up 0.8s;
     -moz-animation: reset, slide-up 0.8s;
+    -o-animation: reset, slide-up 0.8s;
     animation: reset, slide-up 0.8s;
 }
 
@@ -341,6 +350,15 @@ html[xmlns] .slides {
 }
 
 @-webkit-keyframes reset {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-o-keyframes reset {
     0% {
         opacity: 0;
     }
@@ -376,6 +394,20 @@ html[xmlns] .slides {
 
 @-webkit-keyframes slide-left
 /* Safari and Chrome */
+
+{
+    from {
+        left: 12%;
+        opacity: 0;
+    }
+    to {
+        left: 8%;
+        opacity: 1;
+    }
+}
+
+@-o-keyframes slide-left
+/* Opera */
 
 {
     from {
@@ -427,6 +459,20 @@ html[xmlns] .slides {
     }
 }
 
+@-o-keyframes slide-right
+/* Opera */
+
+{
+    from {
+        right: 15%;
+        opacity: 0;
+    }
+    to {
+        right: 8%;
+        opacity: 1;
+    }
+}
+
 @keyframes slide-down {
     from {
         top: 15%;
@@ -466,6 +512,20 @@ html[xmlns] .slides {
     }
 }
 
+@-o-keyframes slide-down
+/* Opera */
+
+{
+    from {
+        top: 15%;
+        opacity: 0;
+    }
+    to {
+        top: 25%;
+        opacity: 0.8;
+    }
+}
+
 @keyframes slide-up {
     from {
         top: 45%;
@@ -493,6 +553,20 @@ html[xmlns] .slides {
 
 @-webkit-keyframes slide-up
 /* Safari and Chrome */
+
+{
+    from {
+        top: 45%;
+        opacity: 0;
+    }
+    to {
+        top: 33%;
+        opacity: 0.8;
+    }
+}
+
+@-o-keyframes slide-up
+/* Opera */
 
 {
     from {

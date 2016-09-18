@@ -109,11 +109,12 @@ ul {
 }
 
 .header-image img {
+    float: left;
     width: 50px;
 }
 
 .header-wrap .header-image h2 {
-    float: right;
+    float: left;
     margin-top: 10px;
     margin-left: 10px;
     font-size: 30px;
@@ -260,6 +261,10 @@ ul {
     }
     .header-wrap .header-menu {
         display: none;
+    }
+    .header-wrap .header-image
+    {
+        margin-left: 10px;
     }
 }
 
