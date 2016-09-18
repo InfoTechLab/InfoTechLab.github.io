@@ -724,6 +724,7 @@ html[xmlns] .slides {
 .main-2 .left,
 .main-2 .center,
 .main-2 .right {
+    position: relative;
     color: #fff;
     float: left;
     text-align: center;
@@ -736,11 +737,22 @@ html[xmlns] .slides {
 .main-2 .left {
     background-color: #F2385A;
     left: -100%;
+    background-image: url(../images/learn.jpg);
+    background-size: cover;
+}
+
+.main-2 .left div
+{
+    position: absolute;
+    background-color: #F2385A;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    opacity: 0.3
 }
 
 .main-2 .center {
     color: #F2385A;
-    background-color: #fff;
     left: 10%;
     opacity: 0;
 }
@@ -754,7 +766,16 @@ html[xmlns] .slides {
     left: 100%;
 }
 
-.main-2 .left h2,
+.main-2 .left h2{
+    position: absolute;
+    width: 100%;
+    
+}
+.main-2 .left p {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+}
 .main-2 .center h2 {
     margin-bottom: 20px;
 }
